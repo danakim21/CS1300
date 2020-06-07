@@ -1,0 +1,147 @@
+* {
+    font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+}
+
+body {
+    margin: 0;
+}
+
+nav {
+    width: 100%;
+}
+
+nav ul {
+    background-color: #0047A0;
+    display: flex;
+    flex-direction: row;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li {
+    list-style: none;
+    flex: 1;
+    text-align: center;
+    padding: 10px 0px;
+}
+
+nav li a {
+    text-decoration: none;
+    color: #ffffff;
+    text-align: center;
+}
+
+nav li:hover {
+    background-color: #003981;
+}
+
+.now {
+    background-color: #CD2E3A;
+}
+
+h1 {
+    font-variant: small-caps;
+    font-size: 50px;
+    text-align: center;
+}
+
+h3 {
+    color: #ffffff;
+    background-color: #CD2E3A;
+    font-size: 18px;
+    padding: 5px 20px;
+    margin-bottom: 20px;
+    /* width: 150px; */
+    display: inline-block;
+}
+
+.description {
+    text-align: justify;
+    margin: 0% 5%;
+}
+
+p strong {
+    color: #0047A0;
+}
+
+p em {
+    color: #CD2E3A;
+}
+
+a {
+    color: #000000;
+}
+
+.info {
+    display: flex;
+}
+
+.infotext {
+    margin: 0% 2%;
+}
+
+.info img {
+    margin-left: 2%;
+}
+
+.menus {
+    margin-top: 5%;
+}
+
+.first, .second, .third {
+    display: flex;
+    flex: 1;
+}
+
+.menus div div {
+    width: 30%;
+    text-align: center;
+    margin: 2% 4%;
+}
+
+.menus div div p {
+    text-align: justify;
+    margin: 2% 4%;
+}
+
+blockquote p strong {
+    background-color: #003981;
+    color: #ffffff;
+    padding: 3px 8px;
+}
+
+footer {
+    color: #706e6e;
+    text-align: center;
+    margin: 5% 0% 2% 0%;
+    font-size: 12px;
+}
+
+
+
+/* Only for index.html  */
+.index {
+    text-align: center;
+    margin-top: 3%;
+}
+
+.index1, .index2 {
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 2%;
+}
+
+.index1 div, .index2 div {
+    flex: 1;
+}
+
+.index a {
+    text-decoration: none;
+}
+
+/* Only for contacts.html  */
+.contacts {
+    text-align: center;
+    margin-top: 13%;
+    margin-bottom: 19%;
+}

@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>Apple Fest</title>
+        <link href="styles/site.css" type="text/css" rel="stylesheet" />
+        <script src="scripts/jquery-3.4.1.min.js" type="text/javascript"></script>
+        <script src="scripts/validation.js" type="text/javascript"></script>
+
+    </head>
+    <body>
+        <header>
+            <nav>
+                <ul>
+                    <li><a href = "index.html">Home</a></li>
+                    <li><a href = "tips.html">Tips</a></li>
+                    <li><a href = "food.html">Food</a></li>
+                    <li><a class = "now" href = "visit.html">Visit</a></li>
+                </ul>
+            </nav>
+            <div class = "top">
+                <p>How to Visit Apple Festival</p>
+            </div>
+        </header>
+
+        <div class = "two_col">
+            <div class = "row">
+                <h2>Directions</h2>
+                <p>The festival takes place on <span class="em">Ithaca Commons</span>, from Cayuga street to Green street. If you are planning to drive to Ithaca Commons, look below for additional parking information. Other ways to arrive to Ithaca Commons is through <span class="em">TCAT</span> rides. </p>
+            </div>
+            <div class = "row">
+                <h2>Parking</h2>
+                <p>Parking is allowed in the garages of <span class="em">Green Street, Seneca Street, and Cayuga Street</span>. Flat fee will be applied, which is <span class="em">$5.00</span> for all day. You may not re-enter the garage. Not only this, but you may also park on the streets, which are free on Saturday and Sunday</p>
+            </div>
+            <div class = "row visit3">
+                <h2>Map</h2>
+                <!-- Source: https://www.downtownithaca.com/wp-content/uploads/AppleHarvestFestival_EventMap_2019_webready.pdf-->
+                <img class = "map" src = "images/visit_map.png" alt = "Apple Fest Map" title = "Apple Fest Map">
+            </div>
+            <a class = "source mapSource" href = "https://www.downtownithaca.com/wp-content/uploads/AppleHarvestFestival_EventMap_2019_webready.pdf">Source: Downtown Ithaca</a>
+            <p class = "visit_map_info">* The restrooms are marked with an R sign, and the visitor information or the lost and found is marked with an I sign on the map. *</p>
+        </div>
+
+        <h2 class = "visitFormTitle">Request Drop-Off</h2>
+
+        <section class = "visitFormSection">
+            <form id="visitForm" method="post" action="https://www.cs.cornell.edu/courses/cs1300/2019fa/submit.php" novalidate>
+
+                <div class="form-label">
+                    <label for="request-name">Name: </label>
+                    <input id="request-name" name="name" required minlength="0" maxlength="50" placeholder="Full Name"/>
+                    <span class="errorContainer hidden" id="request-name-error">
+                        Required. Please enter a valid name.
+                    </span>
+                </div>
+
+                <div class="form-label">
+                    <label for="request-number">Phone Number: </label>
+                    <input id="request-number" name="phoneNumber" required pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" placeholder="111-222-3333"/>
+                    <span class="errorContainer hidden" id="request-number-error">
+                        Required. Please enter a number with valid form.
+                    </span>
+                </div>
+
+                <div class="form-label">
+                    <label for="request-email">Email:</label>
+                    <input type="email" id="request-email" name="email" required placeholder="johnsmith@google.com" />
+                    <span class="errorContainer hidden" id="request-email-error">
+                        Required. Please enter a valid email.
+                    </span>
+                </div>
+
+                <div class="form-label">
+                    <label for="request-people">Total Number of People:</label>
+                    <input type="number" id="request-people" name="numOfPeople" required min="1" max="4" />
+                    <span class="errorContainer hidden" id="request-people-error">
+                        Required. Minimum 1, Maximum 4.
+                    </span>
+                </div>
+
+                <div class="form-label">
+                    <label for="request-location">Pickup Location:</label>
+                    <select id = "request-location" name = "location">
+                        <option value = "north">North Campus</option>
+                        <option value = "collegetown">Collegetown Starbucks</option>
+                        <option value = "west">West Campus</option>
+                        <option value = "statler">Statler Hall</option>
+                    </select>
+                </div>
+
+                <div class="form-label">
+                    <label>Pickup Date:</label>
+                    <div class = "visit-form-date">
+                        <div>
+                            <input type="radio" id = "0927" name="date" value="9/27" checked/>09/27
+                        </div>
+                        <div>
+                            <input type="radio" id = "0928" name="date" value="9/28"/>09/28
+                        </div>
+                        <div>
+                            <input type="radio" id = "0929" name="date" value="9/29"/>09/29
+                        </div>
+                </div>
+                </div>
+
+                <div class="form-label">
+                    <label for="request-time">Pickup Time:</label>
+                    <select id="request-time" name="time">
+                        <option value = "12:00">12:00</option>
+                        <option value = "13:00">13:00</option>
+                        <option value = "14:00">14:00</option>
+                        <option value = "15:00">15:00</option>
+                        <option value = "16:00">16:00</option>
+                        <option value = "17:00">17:00</option>
+                    </select>
+                </div>
+
+                <button type="submit" class="submit">Submit</button>
+            </form>
+        </section>
+
+
+
+        <footer>
+            Ithaca Apple Harvest Festival
+        </footer>
+
+
+
+    </body>
+</html>
