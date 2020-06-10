@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name = "viewport" content = "width=device-width, initial-scale=1">
+        <title>SoPoong</title>
+        <link href ="styles/theme.css" type="text/css" rel="stylesheet" />
+        <script src = "scripts/jquery-3.4.1.min.js" type="text/javascript"></script>
+        <script src = "scripts/interactivity.js" type="text/javascript"></script>
+        <link rel="icon" href="images/logosmall.png">
+        <script src="scripts/validation.js" type="text/javascript"></script>
+    </head>
+    <body>
+        <header>
+            <div class="header">
+                <!-- Source: (original work) Client: SoPoong -->
+                <a href="index.html"><img class="navlogo" src="images/logo.png" alt="Logo"></a>
+                    <nav>
+                        <ul class="navlist">
+                            <li><a href="index.html">Home</a></li>
+                            <li><a href="about.html">About</a></li>
+                            <li><a href="menu.html">Menu</a></li>
+                            <li class = "current-page"><a href="form.html">Order</a></li>
+                            <li><a href="career.html">Career</a></li>
+                        </ul>
+                    </nav>
+            </div>
+            <!-- <hr class = "navbar-under-line"> -->
+        </header>
+        <main>
+            <div class="form">
+              <div class="form-title"><h1> Pre-Order Form </h1></div>
+              <form id="pre-order-form" method="post" action="https://www.cs.cornell.edu/courses/cs1300/2019fa/submit.php" novalidate>
+                    <div class="form-name bold">
+                        <label for="name">Name:</label>
+                        <input type="text" name="name" id="name" required>
+                        <p id='nameError' class="hidden">* Please enter your name.</p>
+                    </div>
+                    <div class="form-phone-num bold">
+                        <label for="phone">Phone Number:</label>
+                        <input type="tel" name="phone" id="phone" required pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}">
+                        <p id='phoneError' class="hidden">* Please eneter your phone number.</p>
+                    </div>
+                    <div class="form-select-category bold">
+                        <label for="category">Select Category:</label>
+                        <select name='category' id="category">
+                            <option id="c1" value="c1">Kimbap</option>
+                            <option id="c2" value="c2">Meal</option>
+                            <option id="c3" value="c3">Noodle</option>
+                            <option id="c4" value="c4">Side Dish</option>
+                        </select>
+
+                    </div>
+                    <div class="form-menus">
+                    <div class="form-menu1">
+                        <div class="form-menu1a">
+                            <label for="quantity1a">Sausage Kimbap:</label>
+                            <input type="number" name="quantity1a" id="quantity1a">
+                        </div>
+                        <div class="form-menu1b">
+                            <label for="quantity1b">Tuna Kimbap:</label>
+                            <input type="number" name="quantity1b" id="quantity1b">
+                        </div>
+                        <div class="form-menu1c">
+                            <label for="quantity1c">Spicy Tuna Kimbap:</label>
+                            <input type="number" name="quantity1c" id="quantity1c">
+                        </div>
+                        <div class="form-menu1d">
+                            <label for="quantity1d">Beef Tteoggalbi Kimbap:</label>
+                            <input type="number" name="quantity1d" id="quantity1d">
+                        </div>
+                        <div class="form-menu1e">
+                            <label for="quantity1e">Chicken Tteoggalbi Kimbap:</label>
+                            <input type="number" name="quantity1e" id="quantity1e">
+                        </div>
+                        <div class="form-menu1f">
+                            <label for="quantity1f">Spicy Pork Kimbap:</label>
+                            <input type="number" name="quantity1f" id="quantity1f">
+                        </div>
+                    </div>
+                    <div class="form-menu2 hidden">
+                        <div class="form-menu2a">
+                            <label for="quantity2a">Bibimbap + Soup:</label>
+                            <input type="number" name="quantity2a" id="quantity2a">
+                        </div>
+                        <div class="form-menu2b">
+                            <label for="quantity2b">Curry Rice + Soup:</label>
+                            <input type="number" name="quantity2b" id="quantity2b">
+                        </div>
+                        <div class="form-menu2c">
+                            <label for="quantity2c">Dduk Mandoo:</label>
+                            <input type="number" name="quantity2c" id="quantity2c">
+                        </div>
+                        <div class="form-menu2d">
+                            <label for="quantity2d">Budae Stew:</label>
+                            <input type="number" name="quantity2d" id="quantity2d">
+                        </div>
+                        <div class="form-menu2e">
+                            <label for="quantity2e">Teriyaki Over Rice & Soup:</label>
+                            <input type="number" name="quantity2e" id="quantity2e">
+                        </div>
+                        <div class="form-menu2f">
+                            <label for="quantity2f">Jaeyook Bokeum Bap & Soup:</label>
+                            <input type="number" name="quantity2f" id="quantity2f">
+                        </div>
+                        <div class="form-menu2g">
+                            <label for="quantity2g">Soft Tofu Stew:</label>
+                            <input type="number" name="quantity2g" id="quantity2g">
+                        </div>
+                        <div class="form-menu2h">
+                            <label for="quantity2h">Soup with a Rice Bowl:</label>
+                            <input type="number" name="quantity2h" id="quantity2h">
+                        </div>
+                        <div class="form-menu2i">
+                            <label for="quantity2i">Ttonkatsu (Fried Pork Cutlet):</label>
+                            <input type="number" name="quantity2i" id="quantity2i">
+                        </div>
+                        <div class="form-menu2j">
+                            <label for="quantity2j">Fried Fish Cutlet:</label>
+                            <input type="number" name="quantity2j" id="quantity2j">
+                        </div>
+                        <div class="form-menu2k">
+                            <label for="quantity2k">Spicy Stir Fried Squid & Soup:</label>
+                            <input type="number" name="quantity2k" id="quantity2k">
+                        </div>
+                        <div class="form-menu2l">
+                            <label for="quantity2l">Bento Box:</label>
+                            <input type="number" name="quantity2l" id="quantity2l">
+                        </div>
+                    </div>
+                    <div class="form-menu3 hidden">
+                        <div class="form-menu3a">
+                            <label for="quantity3a">Ramen:</label>
+                            <input type="number" name="quantity3a" id="quantity3a">
+                        </div>
+                        <div class="form-menu3b">
+                            <label for="quantity3b">Udon:</label>
+                            <input type="number" name="quantity3b" id="quantity3b">
+                        </div>
+                        <div class="form-menu3c">
+                            <label for="quantity3c">Soba:</label>
+                            <input type="number" name="quantity3c" id="quantity3c">
+                        </div>
+                        <div class="form-menu3d">
+                            <label for="quantity3d">Jja Jang Ramen:</label>
+                            <input type="number" name="quantity3d" id="quantity3d">
+                        </div>
+                        <div class="form-menu3e">
+                            <label for="quantity3e">Japchae Fried Yam Noodle:</label>
+                            <input type="number" name="quantity3e" id="quantity3e">
+                        </div>
+                        <div class="form-menu3f">
+                            <label for="quantity3f">Bbim Udon (Cold Noodle):</label>
+                            <input type="number" name="quantity3f" id="quantity3f">
+                        </div>
+                    </div>
+                    <div class="form-menu4 hidden">
+                        <div class="form-menu4a">
+                            <label for="quantity4a">Sam Gak Kimbap:</label>
+                            <input type="number" name="quantity4a" id="quantity4a">
+                        </div>
+                        <div class="form-menu4b">
+                            <label for="quantity4b">Koma Kimbap 2 Roll:</label>
+                            <input type="number" name="quantity4b" id="quantity4b">
+                        </div>
+                        <div class="form-menu4c">
+                            <label for="quantity4c">Yubu Chobap:</label>
+                            <input type="number" name="quantity4c" id="quantity4c">
+                        </div>
+                        <div class="form-menu4d">
+                            <label for="quantity4d">Odeng:</label>
+                            <input type="number" name="quantity4d" id="quantity4d">
+                        </div>
+                        <div class="form-menu4e">
+                            <label for="quantity4e">Ddukboki:</label>
+                            <input type="number" name="quantity4e" id="quantity4e">
+                        </div>
+                        <div class="form-menu4f">
+                            <label for="quantity4f">Fried Pork Dumplings:</label>
+                            <input type="number" name="quantity4f" id="quantity4f">
+                        </div>
+                    </div>
+                    </div>
+                    <div class="form-add-request bold">
+                        <label for="request">Additional Request:</label>
+                        <textarea name="request" id="request"></textarea>
+                    </div>
+                    <div class="form-pickup-time bold">
+                        <label for="time">Select Time:</label>
+                        <input type="time" name="time" id="time" required>
+                        <p id='timeError' class="hidden">* Please choose a time.</p>
+                    </div>
+                    <div class="submit">
+                        <button type="submit">submit</button>
+                    </div>
+              </form>
+            </div>
+        </main>
+        <footer>
+            <hr>
+            <p>SoPoong</p>
+            <p>(607) 339-0064</p>
+            <p>147 Dryden Rd, Ithaca, NY 14850</p>
+        </footer>
+    </body>
+</html>
