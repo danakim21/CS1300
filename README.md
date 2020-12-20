@@ -1,3 +1,3 @@
-# CS1300
+# web-html
 
-All coursework for Cornell University CS/INFO 1300: Introductory Design and Programming for the Web
+Coursework for CS/INFO 1300: Introductory Design and Programming for the Web
